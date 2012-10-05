@@ -1,0 +1,5 @@
+Theme name:    Bootstrap
+Description:   Simple and nice theme made use twitter Bootstrap.
+Author name:   Kostya Kozak
+Author site:   http://lkd.to/kz
+License:       FAFY (Free Always For You)
