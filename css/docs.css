@@ -274,7 +274,9 @@ only screen and (     -o-min-device-pixel-ratio: 2/1) {
 }
 .marketing h1 {
   margin: 60px 0 10px;
-  font-size: 60px;
+  text-transform: uppercase; 
+    font-family: 'Lato', serif;
+      font-size: 40px;
   font-weight: 100;
   line-height: 1;
   letter-spacing: -1px;
@@ -290,7 +292,8 @@ only screen and (     -o-min-device-pixel-ratio: 2/1) {
 }
 .marketing .marketing-byline {
   margin-bottom: 40px;
-  font-size: 20px;
+  font-family: 'Lato', serif;
+    font-size: 20px;
   font-weight: 100;
   line-height: 1.25;
   color: #999;
