@@ -22,8 +22,9 @@ Like Booty? Follow me on Twitter [@KostyaKozak](http://twitter.com/kostyakozak) 
 3. Activate theme in `Extend` → `Site Metadate`
 4. Create new `Site Variables`. Go to `Extend` → `Site Variables` → `Create a new variable`
 
-    Name: twitter / title (another)
-    Value: Your twitter name (as Idiot) / Your Blog title
+     Name: `twitter` / `title` (another)
+    
+     Value: Your twitter name (as `Idiot`) / Your Blog `title`
 
 5. All done! Good job, sir.
 
