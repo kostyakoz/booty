@@ -59,6 +59,9 @@ function twitter_account() {
 	return site_meta('twitter', 'idiot');
 }
 
+function blog_title() {
+	return site_meta('title', 'Blog');
+}
 function twitter_url() {
 	return 'https://twitter.com/' . twitter_account();
 }

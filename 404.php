@@ -1,9 +1,29 @@
+<?php theme_include('header'); ?>
 
-<section class="content">
-    <h1>Oh no, this page can&rsquo;t be found.</h1>
+    <div class="container">
+        
+        <div class="marketing">
 
-    <p>Unfortunately, the page at <code><?php echo current_url(); ?></code> 
-    can't be found, but don't give up hope yet! You can always try going back to 
-    the homepage, or searching.</p>
-</section>
+            <h1>404 ERROR... AIN'T NOBODY GOT TIME FOR THAT!</h1>
+                <p class="marketing-byline">Unfortunately, the page at <code><?php echo current_url(); ?></code> 
+    can't be found, but don't give up hope yet!</p>
+        
+                <div class="posts">
+                    
+                    <div class="row-fluid">
+            
+                        <div class="span12">
+        
+                            <div class="and">&</div>
+        
+                        </div>
+    
+                    </div>
+                
+                </div> 
 
+        </div>
+        
+    </div>
+
+<?php theme_include('footer'); ?>

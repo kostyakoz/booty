@@ -1,18 +1,23 @@
-
 <?php theme_include('header'); ?>
 
-<div class="container">
+    <div class="container">
 
+        <div class="marketing">
 
-<div class="marketing">
-
-    <h1><?php echo page_title(); ?></h1>
-    <div class="posts">
-        <div class="row-fluid">
-            
-      <div class="span12">
+        <!-- One page
+        ================================================== -->
         
-        <p><?php echo page_content(); ?></p> <?php echo page_custom_field("comment", "   <div id='disqus_thread'></div>
+            <h1><?php echo page_title(); ?></h1>
+    
+                <div class="posts">
+        
+                    <div class="row-fluid">
+            
+                        <div class="span12">
+        
+                            <p><?php echo page_content(); ?></p> 
+        
+                                <?php echo page_custom_field("comment", "   <div id='disqus_thread'></div>
     <script type='text/javascript'>
         /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
         var disqus_shortname = 'athlk'; // required: replace example with your forum shortname
@@ -25,10 +30,18 @@
         })();
     </script>
     <noscript>Please enable JavaScript to view the <a href='http://disqus.com/?ref_noscript'>comments powered by Disqus.</a></noscript>
-    <a href='http://disqus.com' class='dsq-brlink'>comments powered by <span class='logo-disqus'>Disqus</span></a>"); ?>   <div class="and">&</div>
-        
+    <a href='http://disqus.com' class='dsq-brlink'>comments powered by <span class='logo-disqus'>Disqus</span></a>"); ?>   
+    
+                                <div class="and">&</div>
+                                
+                    </div>
+                    
+                </div>
+                
+            </div>
+            
         </div>
+        
     </div>
-</div></div></div>
 
 <?php theme_include('footer'); ?>

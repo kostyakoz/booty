@@ -20,7 +20,12 @@ Like Booty? Follow me on Twitter [@KostyaKozak](http://twitter.com/kostyakozak) 
 1. Download latest version of Booty (from this repo).
 2. Upload `Booty` to `/themes` folder (at your site).
 3. Activate theme in `Extend` → `Site Metadate`
-4. All done! Good job, sir.
+4. Create new `Site Variables`. Go to `Extend` → `Site Variables` → `Create a new variable`
+
+    Name: twitter / title (another)
+    Value: Your twitter name (as Idiot) / Your Blog title
+
+5. All done! Good job, sir.
 
 ### What's in future
 

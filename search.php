@@ -1,25 +1,60 @@
-<section class="content">
-    
-    <h1>You searched for &ldquo;<?php echo search_term(); ?>&rdquo;.</h1>
-    
-    <?php if(has_search_results()): ?>
-        <p>We found <?php echo total_search_results(); ?> <?php echo pluralise(total_search_results(), 'result'); ?> for &ldquo;<?php echo search_term(); ?>&rdquo;</p>
-        <ul class="items wrap">
-			<?php while(search_results()): ?>
-			<li>
-				<a href="<?php echo article_url(); ?>" title="<?php echo article_title(); ?>">
-				    <time datetime="<?php echo date(DATE_W3C, article_time()); ?>"><?php echo relative_time(article_time()); ?></time>
-				    <h2><?php echo article_title(); ?></h2>
-				</a>
-			</li>
-			<?php endwhile; ?>
-        </ul>
+<?php theme_include('header'); ?>
 
-        <p><?php echo search_prev(); ?> <?php echo search_next(); ?></p>
+    <div class="container">
 
-    <?php else: ?>
-        <p>Unfortunately, there's no results for &ldquo;<?php echo search_term(); ?>&rdquo;. Did you spell everything correctly?</p>
-    <?php endif; ?>
+        <div class="marketing">
+
+            <h1>You searched for &ldquo;<?php echo search_term(); ?>&rdquo;.</h1>
+            
+                <p class="marketing-byline">We found <?php echo total_search_results(); ?> <?php echo pluralise(total_search_results(), 'result'); ?> for &ldquo;<?php echo search_term(); ?>&rdquo;.</p>
+                
+        </div>
     
-</section>
+        <?php if(has_search_results()): ?>
+        
+        <div class="posts">
+        
+            <div class="row-fluid">
+            
+            <?php while(search_results()): ?>
+            
+                <div class="span12">
+        
+                    <h2><a href="<?php echo article_url(); ?>"> <?php echo article_title(); ?></a></h2>
+        
+                        <p><?php echo article_markdown(); ?></p>
+                        
+                        <div class="and"><?php echo article_author('real_name'); ?> & <?php echo relative_time(article_time()); ?></div>
+      
+                </div>
+                
+            <?php endwhile; ?>
 
+        <div class="pagination" style="text-align:center;margin:15px;font-size:20px;">
+        
+			<div class="wrap">
+			
+				<?php echo search_prev('→'); ?>
+				<?php echo search_next('←'); ?>
+				
+			</div>
+			
+		</div>
+		
+        <?php else: ?>
+        
+		    <div class="marketing">
+		    
+                <p class="marketing-byline">Looks like you have some writing to do!</p>
+                
+            </div>
+	    
+	    <?php endif; ?>
+	           
+            </div>
+    
+        </div>
+
+    </div>
+
+<?php theme_include('footer'); ?>
