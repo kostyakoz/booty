@@ -11,7 +11,7 @@ Simple & mnml theme inspired by Twitter Bootstrap.
 * New layout
 * Fully-responsive design
 
-[View demo](http://a.tehtalk.ru/booty/) right now.
+[View demo](//booty.anchorcms.ru/) right now.
 
 Like Booty? Follow me on Twitter [@KostyaKozak](http://twitter.com/kostyakozak) and get goodies for Anchor.
 

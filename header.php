@@ -104,7 +104,7 @@
     
                     <ul class="masthead-links">
                         <li>
-                            <a href="//github.com/Koskz/Booty" >GitHub project</a>
+                            <a href="//git.io/9fHAOA" >Get on GitHub</a>
                         </li>
                         
                         <li>
@@ -112,11 +112,11 @@
                         </li>
                         
                         <li>
-                            <a href="//github.com/Koskz/Booty/archive/master.zip" >Get It Now</a>
+                            <a href="//anchorthemes.com/" >More Themes</a>
                         </li>
                         
                         <li>
-                            Anchor 0.9
+                            Proudly Anchor 0.9
                         </li>
                    </ul>
     
@@ -129,14 +129,7 @@
         <div class="container">
         
             <ul class="bs-docs-social-buttons">
-            
-      <li>
-        <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=Koskz&repo=Booty&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe>
-      </li>
       
-      <li>
-        <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=Koskz&repo=Booty&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="102px" height="20px"></iframe>
-      </li>
       
       <li class="follow-btn">
         <a href="https://twitter.com/<?php echo twitter_account(); ?>" class="twitter-follow-button" data-link-color="#0069D6" data-show-count="true">Follow @<?php echo twitter_account(); ?></a>

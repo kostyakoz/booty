@@ -288,7 +288,7 @@ only screen and (     -o-min-device-pixel-ratio: 2/1) {
   margin-bottom: 40px;
   font-family: 'Lato', serif;
     font-size: 20px;
-  font-weight: 100;
+  font-weight: 300; 
   line-height: 1.25;
   color: #999;
 }

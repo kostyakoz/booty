@@ -9,7 +9,7 @@
                 
             <h1>Post</h1>
     
-                <p class="marketing-byline">One of many things and thoughts in my head.</p></div>
+                <p class="marketing-byline">One of many thought.</p></div>
     
             <div class="posts">
             

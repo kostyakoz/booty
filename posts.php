@@ -6,7 +6,7 @@
 
            <h1>Posts</h1>
                 
-                <p class="marketing-byline">So cute things and thoughts in my head.</p></div>
+                <p class="marketing-byline">Just cute thought.</p></div>
                 
                 <?php if(has_posts()): ?>
                     
