@@ -1,31 +1,23 @@
 <?php theme_include('header'); ?>
 
     <div class="container">
-
-        <div class="marketing">
-
-        <!-- Page with one post (article)
-        ================================================== -->
-                
-            <h1>Post</h1>
     
-                <p class="marketing-byline">One of many thought.</p></div>
-    
-            <div class="posts">
+        <div class="posts">
             
-                <div class="row-fluid">
+            <div class="row-fluid">
             
-                    <div class="span12">
+                <div class="span12">
                     
-                        <h2><?php echo article_title(); ?></h2>
+                    <h2><?php echo article_title(); ?></h2>
                         
-                            <p><?php echo article_markdown(); ?></p>
+                    <p><?php echo article_markdown(); ?></p>
                             
-                            <div class="and"><?php echo article_author('real_name'); ?> & <?php echo relative_time(article_time()); ?></div>
+                    <div class="and">This article was posted by <?php echo article_author('real_name'); ?>  & It's my <?php echo numeral(article_id()); ?> oldest. It is <?php echo count_words(article_markdown()); ?> words long.</div>
                             
-                        <?php if(comments_open()): ?>
+                    <?php if(comments_open()): ?>
                         
-    <div id="disqus_thread"></div>
+                    <div id="disqus_thread"></div>
+                    
     <script type="text/javascript">
         /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
         var disqus_shortname = 'athlk'; // required: replace example with your forum shortname
@@ -40,7 +32,7 @@
     <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
     <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
           
-                        <?php endif; ?>
+                    <?php endif; ?>
                         
                 </div>
       

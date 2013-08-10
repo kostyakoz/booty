@@ -1,3 +1,14 @@
+/*
+    Theme name: Booty
+    Description: Simple bootstrap-based Anchor theme.
+    Author name: Kostya Kozak
+    Anchor version: 0.9 - 1.0
+    Twitter: http://twitter.com/kostyakozak
+    License: http://licence.visualidiot.com
+    
+    Oh, baby! It's free! Go to http://github.com/koskz and grab it.
+*/
+
 /* Add additional stylesheets below
 -------------------------------------------------- */
 /*
@@ -160,7 +171,7 @@ hr.soften {
   position: relative;
   z-index: 2;
 }
-.jumbotron:after {
+/*.jumbotron:after {
   content: '';
   display: block;
   position: absolute;
@@ -170,7 +181,7 @@ hr.soften {
   left: 0;
   background: url(../img/bs-docs-masthead-pattern.png) repeat center center;
   opacity: .4;
-}
+}*/
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (   min--moz-device-pixel-ratio: 2),
@@ -192,18 +203,28 @@ only screen and (     -o-min-device-pixel-ratio: 2/1) {
 .masthead h1 {
 
  font-weight: 100; 
-  text-transform: uppercase; 
   text-decoration: nones;
    text-align: center;
-  font-family: 'Lato', serif;
+  font-family: 'Clicker Script', cursive;
       font-size: 120px;
   line-height: 1;
   letter-spacing: -2px;
+  margin-bottom: 25px;
 }
 .masthead p {
-  font-size: 40px;
-  font-weight: 200;
+  font-size: 25px;
+  opacity: 0.7;
+  font-weight: 400;
   line-height: 1.25;
+  font-family: normal "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    -webkit-transition: opacity .15s ease-out;
+-moz-transition: opacity .15s ease-out;
+-o-transition: opacity .15s ease-out;
+transition: opacity .15s ease-out;
+}
+
+.masthead p:hover {
+	opacity: 1.0;
 }
 
 /* Textual links in masthead */
@@ -300,7 +321,7 @@ only screen and (     -o-min-device-pixel-ratio: 2/1) {
 
 
 .posts {
-  
+  margin-top:50px;
   color: #5a5a5a;
 }
 .posts h1 {
@@ -311,27 +332,31 @@ only screen and (     -o-min-device-pixel-ratio: 2/1) {
   letter-spacing: -1px;
 }
 .posts h2 {
-  font-weight: 100;
-  text-transform: uppercase; 
-  text-decoration: nones;
-   text-align: center;
-  font-family: 'Lato', serif;
-    margin-bottom: 5px;
+  font-weight: 400;
+  font-size:35px;
+  text-decoration: none;
+  font-family: normal 'Montserrat', sans-serif;
+    margin-bottom: 20px;
 }
 .posts h3 {
   font-weight: 100;
   text-transform: uppercase; 
   text-decoration: nones;
-   text-align: center;
-  font-family: 'Lato', serif;
+  font: 27px/26px Skolar, Tisa, "Chaparral Pro", Merriweather, Georgia, serif;   line-height: 1.5;
+
     margin-bottom: 5px;
 }
 
 .posts p {
-  font-size: 18px;
+  font-size: 22px;
   font-style: normal;
   font-weight: 300;
-  font-family: 'Lato', serif;    line-height: 1.5;
+    font: 22px/26px Skolar, Tisa, "Chaparral Pro", Merriweather, Georgia, serif;   line-height: 1.5;
+}
+
+.pagination {
+	font-family: normal 'Montserrat', sans-serif;
+	font-size:15px;
 }
 
 .and {
@@ -341,7 +366,15 @@ font-family: 'Goudy Bookletter 1911', serif;
    font-size: 18px;
    font-weight: 150;
    opacity:0.5 ;
+     -webkit-transition: opacity .15s ease-out;
+-moz-transition: opacity .15s ease-out;
+-o-transition: opacity .15s ease-out;
+transition: opacity .15s ease-out;
       }
+      
+.and:hover {
+	opacity: 0.8;
+}      
 
 .posts .posts-byline {
   margin-bottom: 40px;
@@ -367,7 +400,25 @@ font-family: 'Goudy Bookletter 1911', serif;
   margin-top: 70px;
   border-top: 1px solid #e5e5e5;
   background-color: #f5f5f5;
+  opacity: 0.5;
+    -webkit-transition: opacity .15s ease-out;
+-moz-transition: opacity .15s ease-out;
+-o-transition: opacity .15s ease-out;
+transition: opacity .15s ease-out;
 }
+
+.footer:hover {
+	opacity: 0.9;
+}
+
+.footer a {
+	color: #4075c3;
+}
+
+.footer a:hover {
+	color: #1e4d92;
+}
+
 .footer p {
   margin-bottom: 0;
   color: #777;

@@ -60,7 +60,7 @@ function twitter_account() {
 }
 
 function blog_title() {
-	return site_meta('title', 'Blog');
+	return site_meta('title', 'Booty 2');
 }
 function twitter_url() {
 	return 'https://twitter.com/' . twitter_account();

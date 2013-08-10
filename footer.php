@@ -1,6 +1,3 @@
-  <!-- Footer
-    ================================================== -->
-    
     <footer class="footer">
     
         <div class="container">
@@ -13,9 +10,6 @@
         
     </footer>
 
-    <!-- Bootstrap JavaScripts
-    ================================================== -->
-    
     <script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
     <script src="<?php echo theme_url('/js/jquery.js'); ?>"></script>
     <script src="<?php echo theme_url('/js/google-code-prettify/prettify.js'); ?>"></script>

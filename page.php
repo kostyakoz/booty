@@ -1,47 +1,23 @@
 <?php theme_include('header'); ?>
 
-    <div class="container">
-
-        <div class="marketing">
-
-        <!-- One page
-        ================================================== -->
-        
-            <h1><?php echo page_title(); ?></h1>
+<div class="container">
     
-                <div class="posts">
-        
-                    <div class="row-fluid">
+    <div class="posts">
             
-                        <div class="span12">
-        
-                            <p><?php echo page_content(); ?></p> 
-        
-                                <?php echo page_custom_field("comment", "   <div id='disqus_thread'></div>
-    <script type='text/javascript'>
-        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-        var disqus_shortname = 'athlk'; // required: replace example with your forum shortname
-
-        /* * * DON'T EDIT BELOW THIS LINE * * */
-        (function() {
-            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        })();
-    </script>
-    <noscript>Please enable JavaScript to view the <a href='http://disqus.com/?ref_noscript'>comments powered by Disqus.</a></noscript>
-    <a href='http://disqus.com' class='dsq-brlink'>comments powered by <span class='logo-disqus'>Disqus</span></a>"); ?>   
-    
-                                <div class="and">&</div>
-                                
-                    </div>
+        <div class="row-fluid">
+            
+            <div class="span12">
                     
-                </div>
-                
+                <h2><?php echo page_title(); ?></h2>
+                        
+                <p><?php echo page_content(); ?></p>
+
             </div>
-            
+      
         </div>
-        
+            
     </div>
+        
+</div>
 
 <?php theme_include('footer'); ?>

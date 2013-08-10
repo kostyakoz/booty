@@ -1,3 +1,14 @@
+/*
+    Theme name: Booty
+    Description: Simple bootstrap-based Anchor theme.
+    Author name: Kostya Kozak
+    Anchor version: 0.9 - 1.0
+    Twitter: http://twitter.com/kostyakozak
+    License: http://licence.visualidiot.com
+    
+    Oh, baby! It's free! Go to http://github.com/koskz and grab it.
+*/
+
 /*!
  * Bootstrap Responsive v2.3.2
  *
@@ -131,10 +142,10 @@
   .navbar-static-top .container,
   .navbar-fixed-top .container,
   .navbar-fixed-bottom .container {
-    width: 1170px;
+    width: 720px;
   }
   .span12 {
-    width: 1170px;
+    width: 720px;
   }
   .span11 {
     width: 1070px;

@@ -1,3 +1,14 @@
+/*
+    Theme name: Booty
+    Description: Simple bootstrap-based Anchor theme.
+    Author name: Kostya Kozak
+    Anchor version: 0.9 - 1.0
+    Twitter: http://twitter.com/kostyakozak
+    License: http://licence.visualidiot.com
+    
+    Oh, baby! It's free! Go to http://github.com/koskz and grab it.
+*/
+
 /*!
  * Bootstrap v2.3.2
  *
@@ -231,13 +242,13 @@ body {
 }
 
 a {
-  color: #0088cc;
+  color: #3d4551;
   text-decoration: none;
 }
 
 a:hover,
 a:focus {
-  color: #005580;
+  color: #4075c3;
   text-decoration: none;
   -moz-transition: all 0.25s ease-in-out;
   -webkit-transition: all 0.25s ease-in-out;
@@ -290,11 +301,11 @@ a:focus {
 .navbar-static-top .container,
 .navbar-fixed-top .container,
 .navbar-fixed-bottom .container {
-  width: 940px;
+  width: 720px;
 }
 
 .span12 {
-  width: 940px;
+  width: 720px;
 }
 
 .span11 {
@@ -655,8 +666,7 @@ p {
   margin-bottom: 20px;
   font-size: 21px;
   font-weight: 100;
-  font-family: 'Lato', serif;
-    line-height: 30px;
+  line-height: 30px;
 }
 
 small {
@@ -823,7 +833,16 @@ ol ul {
 }
 
 li {
+  
   line-height: 20px;
+}
+
+.posts li {
+	font-size: 22px;
+font-style: normal;
+font-weight: 300;
+font: 22px/26px Skolar, Tisa, "Chaparral Pro", Merriweather, Georgia, serif;
+line-height: 1.5;
 }
 
 ul.unstyled,
@@ -4569,7 +4588,7 @@ input[type="submit"].btn.btn-mini {
 .navbar-static-top .container,
 .navbar-fixed-top .container,
 .navbar-fixed-bottom .container {
-  width: 940px;
+  width: 720px;
 }
 
 .navbar-fixed-top {

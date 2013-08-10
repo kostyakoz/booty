@@ -1,5 +1,5 @@
 Theme name:    Booty
-Description:   Clean & mnml theme for Anchor 0.9.
+Description:   Simple bootstrap-based Anchor theme.
 Author name:   Kostya Kozak
 Author site:   http://twitter.com/kostyakozak
 License:       http://licence.visualidiot.com

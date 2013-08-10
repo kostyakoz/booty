@@ -1,24 +1,24 @@
-﻿## Booty theme for Anchor 0.9
+﻿## Booty theme for Anchor
 
-Simple & mnml theme inspired by Twitter Bootstrap. 
+Simple bootstrap-based Anchor theme.
 
-![With love.](http://cl.ly/image/2H013f2L0V1v/Image.jpg)
+![Responsive.](http://f.cl.ly/items/3d0l3J3h111t2W443W3B/booty.png)
 
-**What's new:**
+**What's new? All new.**
 
-* Cute typography
-* Comments powered by DiSQUS
-* New layout
-* Fully-responsive design
+* Fonts. I really love Google Fonts.
+* New header background. On the sea.
+* Layout now is fixed. 720px, and responsive.
+* New super-awesome colors. You love it.
 
-[View demo](//booty.anchorcms.ru/) right now.
+[Demo? Really? Here.](http://koskz.github.io/booty)
 
-Like Booty? Follow me on Twitter [@KostyaKozak](http://twitter.com/kostyakozak) and get goodies for Anchor.
+Want [follow me](http://twitter.com/kostyakozak)? Just do it.
 
-### How install
+### How install Booty
 
-1. Download latest version of Booty (from this repo).
-2. Upload `Booty` to `/themes` folder (at your site).
+1. Get Booty `.zip` (click here).
+2. Upload `booty` to `/themes` folder (at your Anchor super-site).
 3. Activate theme in `Extend` → `Site Metadate`
 4. Create new `Site Variables`. Go to `Extend` → `Site Variables` → `Create a new variable`
 
@@ -26,8 +26,8 @@ Like Booty? Follow me on Twitter [@KostyaKozak](http://twitter.com/kostyakozak) 
     
      Value: Your twitter name (as `Idiot`) / Your Blog `title`
 
-5. All done! Good job, sir.
+5. More? Not now. Go home.
 
-### What's in future
+### Help 'nd Support
 
-Some fix with fonts & more customizable settings.
+I really want help to you. Just [tweet me](http://twitter.com/kostyakozak) about you problem.
