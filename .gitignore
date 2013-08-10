@@ -1,0 +1,6 @@
+# os/app generated files
+Thumbs.db
+.DS_Store
+*.esproj
+*.log
+*.gz

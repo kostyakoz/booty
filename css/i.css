@@ -1,0 +1,17 @@
+/*
+    Theme name: Booty
+    Description: Simple bootstrap-based Anchor theme.
+    Author name: Kostya Kozak
+    Anchor version: 0.9 - 1.0
+    Twitter: http://twitter.com/kostyakozak
+    License: http://licence.visualidiot.com
+    
+    Oh, baby! It's free! Go to http://github.com/koskz and grab it.
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Clicker+Script|Montserrat:400,700|Goudy+Bookletter+1911);
+
+@import "bootstrap.css";
+@import "bootstrap-responsive.css";
+@import "docs.css";
+@import "../js/google-code-prettify/prettify.css";
