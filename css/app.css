@@ -9,15 +9,52 @@
     Oh, baby! It's free! Go to http://github.com/koskz and grab it.
 */
 
-/* Add additional stylesheets below
--------------------------------------------------- */
-/*
-  Bootstrap's documentation styles
-  Special styles for presenting Bootstrap's documentation and examples
-*/
+a {
+	color: #3d4551;
+}
 
+a:hover,
+a:focus {
+	color: #4075c3;
+	text-decoration: none;
+	-moz-transition: all 0.25s ease-in-out;
+	-webkit-transition: all 0.25s ease-in-out;
+}
+  
+[class*="span"], .row-fluid [class*="span"] {
+	margin-left: auto;
+}
 
+.container,
+.navbar-static-top .container,
+.navbar-fixed-top .container,
+.navbar-fixed-bottom .container {
+	width: 720px;
+}
 
+.span12 {
+	width: 720px;
+}
+
+.lead {
+	font-weight: 100;
+}
+
+.posts li {
+	font-size: 22px;
+	font-style: normal;
+	font-weight: 300;
+	font: 22px/26px Skolar, Tisa, "Chaparral Pro", Merriweather, Georgia, serif;
+	line-height: 1.5;
+}
+
+.navbar-static-top .container,
+.navbar-fixed-top .container,
+.navbar-fixed-bottom .container {
+	width: 720px;
+}
+
+// Old docs.css
 /* Body and structure
 -------------------------------------------------- */
 
@@ -171,17 +208,7 @@ hr.soften {
   position: relative;
   z-index: 2;
 }
-/*.jumbotron:after {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: url(../img/bs-docs-masthead-pattern.png) repeat center center;
-  opacity: .4;
-}*/
+
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (   min--moz-device-pixel-ratio: 2),

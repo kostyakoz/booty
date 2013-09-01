@@ -6,8 +6,11 @@
         <title><?php echo page_title('Page can’t be found'); ?> — <?php echo site_name(); ?></title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="<?php echo site_description(); ?>">
-        
-        <link href="<?php echo theme_url('/css/i.css'); ?>" rel="stylesheet">
+        <link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/css/bootstrap.min.css" rel="stylesheet">
+        <link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/css/bootstrap-responsive.min.css" rel="stylesheet">
+        <link href="http://fonts.googleapis.com/css?family=Clicker+Script|Montserrat:400,700|Goudy+Bookletter+1911" rel="stylesheet">
+        <link href="<?php echo theme_url('/css/app.css'); ?>" rel="stylesheet">
+        <link href="<?php echo theme_url('/js/google-code-prettify/prettify.css'); ?>" rel="stylesheet">
         
         <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
         <!--[if lt IE 9]>
