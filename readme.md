@@ -4,6 +4,8 @@ Anchor theme powered by Twitter Bootstrap 3.
 
 **Now available with Bootstrap 3.**
 
+![screenshot.](http://cl.ly/WuAm/booty3.png)
+
 ## Why you'll love Booty
 
 * Nice fonts and typography.
