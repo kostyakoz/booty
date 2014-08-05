@@ -20,4 +20,4 @@ Anchor theme powered by Twitter Bootstrap 3.
 
 ## Support?
 
-[Go the Anchor CMS official Forums.](http://forums.anchorcms.com)
+[Go to the Anchor CMS official Forums.](http://forums.anchorcms.com)
