@@ -1,10 +1,10 @@
-## Booty 3
+# Booty 3
 
 Anchor theme powered by Twitter Bootstrap 3.
 
 **Now available with Bootstrap 3.**
 
-### Why you'll love Booty
+## Why you'll love Booty
 
 * Nice fonts and typography.
 * Work fine with latest Anchor version.
@@ -14,10 +14,10 @@ Anchor theme powered by Twitter Bootstrap 3.
 
 [Want demo?](http://booty3.anchorcms.ru)
 
-### How to install Booty
+## How to install Booty
 
 [Read here.](http://booty3.anchorcms.ru/install)
 
-### Support?
+## Support?
 
 [Go the Anchor CMS official Forums.](http://forums.anchorcms.com)
