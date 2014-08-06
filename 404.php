@@ -1,24 +1,12 @@
 <?php theme_include('header'); ?>
-
-    <div class="container">
+<main class="bs-docs-masthead" id="content" role="main"><div style="padding: 30px 15px; "><div style="padding: 50px 0;">
+  
+  <div class="container">
     
-        <div class="posts">
-            
-            <div class="row-fluid">
-            
-                <div class="span12">
-                    
-                    <h2>404 ERROR... AIN'T NOBODY GOT TIME FOR THAT!</h2>
-                        
-                    <p>Unfortunately, the page at <code><?php echo current_url(); ?></code> 
-    can't be found, but don't give up hope yet!</p>
-
-                </div>
-      
-            </div>
-            
-        </div>
-        
-    </div>
-
+    <h1>WTF? 404 ERROR HERE.</h1>
+    
+  </div>
+  
+</div></div>
+</main>
 <?php theme_include('footer'); ?>

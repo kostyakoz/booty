@@ -1,5 +1,7 @@
 <?php theme_include('header'); ?>
 
+    <!-- SEARCH DON'T WORK NOW. IN NEXT UPDATE MAYBE... -->
+    
     <div class="container">
 
          <div class="posts">

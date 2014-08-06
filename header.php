@@ -6,119 +6,74 @@
         <title><?php echo page_title('Page can’t be found'); ?> — <?php echo site_name(); ?></title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="<?php echo site_description(); ?>">
-        <link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/css/bootstrap.min.css" rel="stylesheet">
-        <link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/css/bootstrap-responsive.min.css" rel="stylesheet">
-        <link href="http://fonts.googleapis.com/css?family=Clicker+Script|Montserrat:400,700|Goudy+Bookletter+1911" rel="stylesheet">
+        
+        <link href="<?php echo theme_url('/css/bootstrap.css'); ?>" rel="stylesheet">
         <link href="<?php echo theme_url('/css/app.css'); ?>" rel="stylesheet">
-        <link href="<?php echo theme_url('/js/google-code-prettify/prettify.css'); ?>" rel="stylesheet">
+
+        <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
         
         <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
         <!--[if lt IE 9]>
               <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
 
-	    <?php if(customised()): ?>
+	      <?php if(customised()): ?>
 		    <!-- Custom CSS -->
     		<style><?php echo article_css(); ?></style>
 
     		<!--  Custom Javascript -->
     		<script><?php echo article_js(); ?></script>
-		<?php endif; ?>
+		    <?php endif; ?>
 	
-        <link rel="shortcut icon" href="<?php echo theme_url('/ico/favicon.ico'); ?>">
-
+        <?php if (($color = article_custom_field('link_color')) || ($color = page_custom_field('link_color'))): ?>
+        <style>
+        .bs-docs-nav .navbar-brand,
+        .bs-docs-nav .navbar-nav > li > a {
+            font-weight: 500;
+            color: <?php echo $color; ?>;
+        }
+        .bs-docs-nav .navbar-nav > li > a:hover,
+        .bs-docs-nav .navbar-nav > .active > a,
+        .bs-docs-nav .navbar-nav > .active > a:hover {
+            color: <?php echo $color; ?>;
+        }
+        footer a{
+            color:<?php echo $color; ?>;
+        }
+        
+        footer a:hover{
+	        color:<?php echo $color; ?>;
+        }   
+        </style>
+        <?php endif; ?>
     </head>
-    
-    <body data-spy="scroll" data-target=".bs-docs-sidebar">
+    <body>
 
-        <div class="navbar navbar-inverse navbar-fixed-top">
-        
-            <div class="navbar-inner">
-          
-                <div class="container">
-            
-                  <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-              
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-              
-                  </button>
-          
-                  <!-- Uncomment it, if you are want using site name -->
-                    
-                  <a class="brand" style="display:none;" href="<?php echo base_url(); ?>"><?php echo site_name(); ?></a>
-                  
-                  <form class="navbar-search pull-right" action="<?php echo search_url(); ?>" method="post">
-          
-                  <input type="text" name="term" class="search-query" placeholder="To search, type and hit enter →" value="<?php echo search_term(); ?>">
-              
-                  </form>          
-          
-            <div class="nav-collapse collapse">
-            
-			    <?php if(has_menu_items()): ?>
-			
-			    <ul class="nav">
-			    
-                  <?php while(menu_items()): ?>
-                  
-			          <li <?php echo (menu_active() ? 'class="active"' : ''); ?>>
-                          <a href="<?php echo menu_url(); ?>"><?php echo menu_name(); ?></a>
-                      </li>
-                      
-			      <?php endwhile; ?>
-			      
-                </ul>
+        <header class="navbar navbar-static-top bs-docs-nav" id="top" role="banner">
+            <div class="container">
+                <div class="navbar-header">
                 
-			<?php endif; ?>
-			
-          </div>
-          
-        </div>
-        
-      </div>
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
       
-    </div>
+                    <a href="/" class="navbar-brand"><?php echo site_name(); ?></a>
     
-	<div class="jumbotron masthead">
-
-        <div class="container">
-        
-            <h1><?php echo blog_title('title'); ?></h1>
-            
-                <p class="lead"><?php echo site_description(); ?></p>
+                </div>
     
-                    <ul class="masthead-links">
-                        <li><a href="//git.io/9fHAOA" >Grab It Now</a></li>
-                        
-                        <li><a href="<?php echo base_url(); ?>about">About</a></li>
-                        
-                        <li><a href="//anchorthemes.com/" >More Themes</a></li>
-                        
-                        <li>Powered by Anchor</li>
-                   </ul>
-    
-        </div>
-        
-    </div>
-    
-    <div class="bs-docs-social">
-    
-        <div class="container">
-        
-            <ul class="bs-docs-social-buttons">
-      
-            <li class="follow-btn">
-                <a href="https://twitter.com/<?php echo twitter_account(); ?>" class="twitter-follow-button" data-link-color="#0069D6" data-show-count="true">Follow @<?php echo twitter_account(); ?></a>
-            </li>
-      
-            <li class="tweet-btn">
-                <a href="https://twitter.com/share" class="twitter-share-button" data-url="https://github.com/Koskz/Booty" data-count="horizontal" data-via="twbootstrap" data-related="mdo:Booty theme for @anchorcms">Tweet</a>
-            </li>
-      
-            </ul>
-            
-        </div>
-        
-    </div>
+              <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+              <?php if(has_menu_items()): ?>
+                <ul class="nav navbar-nav">
+                  <?php while(menu_items()): ?>
+                    <li <?php echo (menu_active() ? 'class=""' : ''); ?>>
+                      <a href="<?php echo menu_url(); ?>" title="<?php echo menu_title(); ?>"><?php echo menu_name(); ?></a>
+                    </li>
+                  <?php endwhile; ?>
+                </ul>
+              <?php endif; ?>
+              </nav>
+            </div>
+        </header>

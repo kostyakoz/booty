@@ -1,5 +1,6 @@
 # os/app generated files
 Thumbs.db
+.git
 .DS_Store
 *.esproj
 *.log

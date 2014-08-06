@@ -1,56 +1,63 @@
 <?php theme_include('header'); ?>
 
-    <div class="container">
+<main class="bs-docs-masthead" id="content" role="main">
+ <div style="padding: 30px 15px; "><div style="padding: 50px 0;">
+  
+  <div class="container">
+    <h1><?php echo site_name(); ?></h1>
+    <p class="lead"><?php echo site_description(); ?></p>
+  </div>
+  
+ </div></div>
+</main>
 
-        <?php if(has_posts()): ?>
+        <div class="container">
+
+            <?php if(has_posts()): ?>
                     
-            <div class="posts">
-                        
-            <div class="row-fluid">
-                
                 <?php while(posts()): ?>
-      
-                    <div class="span12">
-        
-                    <h2><a href="<?php echo article_url(); ?>"> <?php echo article_title(); ?></a></h2>
-                    <p><?php echo article_markdown(); ?></p>
+
+                <div class="row">
+                    <div class="col-md-12">
+                         
+                        <article>
+
+                            <h2><a href="<?php echo article_url(); ?>"> <?php echo article_title(); ?></a></h2>
+                    
+                            <p><?php echo article_markdown(); ?></p>
                                 
-                    <div class="and">This article was posted by <?php echo article_author('real_name'); ?> & <?php echo relative_time(article_time()); ?></div>
-                            
-                    </div>
+                            <div class="date">Written <?php echo relative_time(article_time()); ?></div>
+        
+                        </article>
       
+                        <div class="divider"></div>
+
+                    </div>
+
+                </div>
+                 
                 <?php endwhile; ?>
-             
+
                 <?php if(has_pagination()): ?>
+                    
+                    <ul class="pager">
+		                <li class="next"><?php echo posts_next('Newer &rarr;'); ?></li>
+				        <li class="previous"><?php echo posts_prev('&larr; Older'); ?></li>
+                    </ul>
                 
-		        <div class="pagination" style="text-align:center;margin:15px;font-size:20px;">
-		            
-		            <div class="wrap pagination">
-		            
-				        <?php echo posts_next('← Newest'); ?>
-				        
-				        <?php echo posts_prev('Oldest →'); ?>
-				        
-			       </div>
-		 
-		        </div>
-		
-		        <?php endif; ?>
+                <?php endif; ?>
         
                 <?php else: ?>
 		
-		        <div class="span12">
+		        <div class="row">
+                    <div class="col-md-12">
         
-                    <h2>Looks like you have some writing to do!</h2>
+                        <article><p>Looks like you have some writing to do!</p></article>
 
-				</div>
+				    </div>
+                </div>    
             
                 <?php endif; ?>       
-    
-            </div>
-    
+
         </div>
-
-    </div>
-
 <?php theme_include('footer'); ?>

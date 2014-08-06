@@ -1,5 +1,5 @@
-Theme name:    Booty
-Description:   Simple bootstrap-based Anchor theme.
-Author name:   Kostya Kozak
-Author site:   http://twitter.com/kostyakozak
-License:       http://licence.visualidiot.com
+Theme name:    Booty 3
+Description:   Anchor theme based on Twitter Bootstrap 3.
+Author name:   Kostya
+Author site:   http://kostyakoz.com
+License:       WTFPL (http://sam.zoy.org/wtfpl/COPYING)

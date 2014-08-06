@@ -56,12 +56,9 @@ function relative_time($date) {
 }
 
 function twitter_account() {
-	return site_meta('twitter', 'idiot');
+	return site_meta('twitter', 'anchorcms');
 }
 
-function blog_title() {
-	return site_meta('title', 'Booty 2');
-}
 function twitter_url() {
 	return 'https://twitter.com/' . twitter_account();
 }

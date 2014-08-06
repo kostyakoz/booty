@@ -1,20 +1,26 @@
 <?php theme_include('header'); ?>
+  <main class="bs-docs-masthead" id="content" role="main" <?php if (($img = article_custom_field('cover_img')) || ($img = page_custom_field('cover_img'))): ?>style="background: url(<?php echo $img; ?>);background-position: center center;
+background-size: cover;"<?php endif; ?>><div style="padding: 30px 15px; <?php if (($img = article_custom_field('cover_img')) || ($img = page_custom_field('cover_img'))): ?>background: url(<?php echo theme_url('/img/overlay.png'); ?>);<?php endif; ?>"><div style="padding: 50px 0;">
+    <div class="container">
+      <h1><?php echo article_title(); ?></h1>
+      <p class="lead"><?php echo article_description(); ?></p>
+      <p class="version">Written <?php echo relative_time(article_time()); ?></p>
+    </div>
+  </div></div>
+</main>
 
     <div class="container">
     
-        <div class="posts">
-            
-            <div class="row-fluid">
-            
-                <div class="span12">
+         <div class="row">
+                    <div class="col-md-12">
+                         
+                        <article>
                     
-                    <h2><?php echo article_title(); ?></h2>
-                        
-                    <p><?php echo article_markdown(); ?></p>
+                          <p><?php echo article_markdown(); ?></p>
                             
-                    <div class="and">This article was posted by <?php echo article_author('real_name'); ?>  & It's my <?php echo numeral(article_id()); ?> oldest. It is <?php echo count_words(article_markdown()); ?> words long.</div>
-                            
-                    <?php if(comments_open()): ?>
+                             <?php if(comments_open()): ?>
+
+                        <div class="divider"></div>
                         
                     <div id="disqus_thread"></div>
                     
@@ -34,12 +40,11 @@
           
                     <?php endif; ?>
                         
-                </div>
+                </article>
       
             </div>
             
         </div>
         
     </div>
-
 <?php theme_include('footer'); ?>
