@@ -1,5 +1,5 @@
 Theme name:    Booty 3
 Description:   Anchor theme based on Twitter Bootstrap 3.
 Author name:   Kostya
-Author site:   http://kostyakoz.com
+Author site:   http://twitter.com/kostyakoz
 License:       WTFPL (http://sam.zoy.org/wtfpl/COPYING)
